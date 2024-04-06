@@ -1,0 +1,68 @@
+/* Custom styles for the updated theme */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font */
+  color: #E0E0E0; /* Light grey font color for better visibility against darker backgrounds */
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #212121 50%, #808080 50%); /* Sharp transition from dark gray to lighter gray */
+}
+
+
+
+
+.ai-avatar {
+  border: 5px solid #8B4513; /* Consider adjusting the border color to match the new theme if needed */
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+/* Enhancements for the button to fit with OpenAI's dark green theme */
+.btn-primary {
+  background-color: #003831; /* Dark green background similar to OpenAI */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #00534C; /* Slightly lighter green on hover */
+}
+
+/* Adjustments for the response rectangle to maintain readability */
+.response-rectangle {
+  background-color: #d2b48c; /* Light brown background */
+  color: #212121; /* Dark gray text color, same as the gradient's dark color */
+  font-size: 1.2rem; /* Larger font size for the AI response */
+  border-radius: 0.25rem; /* Rounded corners */
+  border: 4px solid #8B4513; /* Thicker dark brown border to match the theme */
+  padding: 1rem; /* Padding inside the box */
+  margin-top: 1rem; /* Space above the rectangle */
+  width: auto; /* Allows the box to expand based on content, up to max-width */
+  max-width: 90%; /* Maximum width limit */
+  overflow-y: auto; /* Enables vertical scrolling if content exceeds the rectangle's height */
+  max-height: 300px; /* Set a maximum height for the rectane */
+}
+
+
+/* Custom focus styles for thematic consistency */
+.query-input:focus {
+  border-color: #A0522D; /* Adjust color as needed */
+  box-shadow: 0 0 0 0.2rem rgba(0, 56, 49, 0.25); /* Match OpenAI's theme */
+}
+
+/* Theme consistent border color adjustments */
+.response-rectangle, .query-input, .submit-button {
+  border-color: #003831; /* Dark green to match the button */
+}
+
+@media (max-width: 768px) {
+  /* Adjust responsive styles as needed */
+}
