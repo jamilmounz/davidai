@@ -7,7 +7,7 @@ require('dotenv').config();
 const cors = require('cors');
 
 
-
+const api_key = process.env.OPENAI_API_KEY
 
 
 const app = express();
@@ -20,7 +20,7 @@ app.use(cors());
 connectDB(); // Connect to MongoDB
 
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: api_key,
 });
 
 
