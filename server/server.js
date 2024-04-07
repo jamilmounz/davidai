@@ -13,7 +13,7 @@ const api_key = process.env.OPENAI_API_KEY
 const app = express();
 const port = process.env.PORT || 4000;
 
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 
 app.use(bodyParser.json());
@@ -119,7 +119,7 @@ app.post('/talk', async (req, res) => {
 });
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
   });
   
 
