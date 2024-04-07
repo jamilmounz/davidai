@@ -49,6 +49,7 @@ body {
   max-width: 90%; /* Maximum width limit */
   overflow-y: auto; /* Enables vertical scrolling if content exceeds the rectangle's height */
   max-height: 300px; /* Set a maximum height for the rectane */
+  white-space: pre-wrap; /* This will preserve both spaces and line breaks */
 }
 
 
