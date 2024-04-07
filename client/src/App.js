@@ -18,7 +18,7 @@ function App() {
 
   const submitQuery = async () => {
     try {
-      const res = await axios.post('http://localhost:4000/talk', { query });
+      const res = await axios.post('https://davidai-06ad0bdcd3bf.herokuapp.com/talk', { query });
       setResponse(res.data.message);
       setQuery('');
     } catch (error) {
