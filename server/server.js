@@ -61,7 +61,7 @@ app.post('/talk', async (req, res) => {
             'you to separate them in categories like before but now in the following form: '+
             '(Update Asset): Asset name, ID, new Department, new Additional notes.' +
         'i will feed you back the conversations with the user and i want you to use these conversations to answer questions such as who has most laptops' +
-    'i want you to use all the conversations as a source of information, depend on the conversation to give reports of the assets with their respective IDs or answer questions regarding the additional notes saved with the assets. I know you do not have list of assets, but still you can answer the history of conversations. i want you to be carefull to changes taking place to certain assets, like if they have been ever given to other department or something like that'}
+    'i want you to use all the conversations as a source of information, depend on the conversation to give reports of the assets with their respective IDs or answer questions regarding the additional notes saved with the assets. I know you do not have list of assets, but still you can answer through the history of conversations. i want you to be carefull to changes taking place to certain assets, like if they have been ever given to other department or something like that. I want you to be able to give lists of assets and compare them if the user ever asks you so. You can use past conversations to answer such questions!'}
         ];
 
         const messagesToSend = [...initialMessages, ...historyforapi, { role: "user", content: prompt }];
